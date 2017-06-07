@@ -1,4 +1,4 @@
-class HarriesController < ApplicationController
+class Api::V1::HarriesController < ApplicationController
 
     def index
       @harries = Harry.all
