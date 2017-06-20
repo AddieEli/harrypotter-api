@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+get '/' => 'characters#index'
+
   namespace :api do
     namespace :v1 do
       get '/harries' => 'harries#index'
@@ -15,4 +17,6 @@ Rails.application.routes.draw do
       get '/harries/:id' => 'harries#show'
     end
  end
+
+
 end
